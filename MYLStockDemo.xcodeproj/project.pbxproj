@@ -33,6 +33,8 @@
 		2373105E1F39B52B00B1B3BD /* YKLineEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 237310511F39B52B00B1B3BD /* YKLineEntity.m */; };
 		2373105F1F39B52B00B1B3BD /* YKTimeLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 237310531F39B52B00B1B3BD /* YKTimeLineView.m */; };
 		237310601F39B52B00B1B3BD /* YKViewBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 237310551F39B52B00B1B3BD /* YKViewBase.m */; };
+		8D0232A11F43EE850032C4AA /* YJFPSLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D02329E1F43EE850032C4AA /* YJFPSLabel.m */; };
+		8D0232A21F43EE850032C4AA /* YJFPSMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D0232A01F43EE850032C4AA /* YJFPSMonitor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,6 +110,10 @@
 		237310551F39B52B00B1B3BD /* YKViewBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YKViewBase.m; sourceTree = "<group>"; };
 		66E01C24B0AACFD2C72A2AF4 /* Pods-MYLStockDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MYLStockDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-MYLStockDemo/Pods-MYLStockDemo.release.xcconfig"; sourceTree = "<group>"; };
 		7EAB795E105B39B7B99DF190 /* Pods-MYLStockDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MYLStockDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MYLStockDemo/Pods-MYLStockDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		8D02329D1F43EE850032C4AA /* YJFPSLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJFPSLabel.h; sourceTree = "<group>"; };
+		8D02329E1F43EE850032C4AA /* YJFPSLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJFPSLabel.m; sourceTree = "<group>"; };
+		8D02329F1F43EE850032C4AA /* YJFPSMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJFPSMonitor.h; sourceTree = "<group>"; };
+		8D0232A01F43EE850032C4AA /* YJFPSMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJFPSMonitor.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,6 +199,7 @@
 				23730FC41F39561C00B1B3BD /* Supporting Files */,
 				23730FF71F39569500B1B3BD /* PrefixHeader.pch */,
 				2373102A1F3989BB00B1B3BD /* PublicDefine.h */,
+				8D02329C1F43EE850032C4AA /* YJFPSLabel */,
 			);
 			path = MYLStockDemo;
 			sourceTree = "<group>";
@@ -293,6 +300,17 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		8D02329C1F43EE850032C4AA /* YJFPSLabel */ = {
+			isa = PBXGroup;
+			children = (
+				8D02329D1F43EE850032C4AA /* YJFPSLabel.h */,
+				8D02329E1F43EE850032C4AA /* YJFPSLabel.m */,
+				8D02329F1F43EE850032C4AA /* YJFPSMonitor.h */,
+				8D0232A01F43EE850032C4AA /* YJFPSMonitor.m */,
+			);
+			path = YJFPSLabel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -363,7 +381,7 @@
 				TargetAttributes = {
 					23730FC01F39561C00B1B3BD = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 7ZAD5728G2;
+						DevelopmentTeam = PHUF2ASV3Q;
 						ProvisioningStyle = Automatic;
 					};
 					23730FD91F39561C00B1B3BD = {
@@ -481,6 +499,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D0232A21F43EE850032C4AA /* YJFPSMonitor.m in Sources */,
 				237310331F39987900B1B3BD /* StockChatCell.m in Sources */,
 				23730FCC1F39561C00B1B3BD /* ViewController.m in Sources */,
 				237310581F39B52B00B1B3BD /* MATipView.m in Sources */,
@@ -496,6 +515,7 @@
 				2373105C1F39B52B00B1B3BD /* YKLineChartViewBase.m in Sources */,
 				2373102D1F398A5200B1B3BD /* Common.m in Sources */,
 				237310601F39B52B00B1B3BD /* YKViewBase.m in Sources */,
+				8D0232A11F43EE850032C4AA /* YJFPSLabel.m in Sources */,
 				2373105D1F39B52B00B1B3BD /* YKLineDataSet.m in Sources */,
 				237310571F39B52B00B1B3BD /* KLineTipBoardView.m in Sources */,
 				237310361F39A12900B1B3BD /* WYStockTopBarView.m in Sources */,
@@ -649,9 +669,10 @@
 			baseConfigurationReference = 7EAB795E105B39B7B99DF190 /* Pods-MYLStockDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 7ZAD5728G2;
+				DEVELOPMENT_TEAM = PHUF2ASV3Q;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/MYLStockDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = MYLStockDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wyjf.MYLStockDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -663,9 +684,10 @@
 			baseConfigurationReference = 66E01C24B0AACFD2C72A2AF4 /* Pods-MYLStockDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 7ZAD5728G2;
+				DEVELOPMENT_TEAM = PHUF2ASV3Q;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/MYLStockDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = MYLStockDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wyjf.MYLStockDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";

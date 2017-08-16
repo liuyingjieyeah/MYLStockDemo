@@ -5,6 +5,7 @@
 //  Created by myl on 2017/8/8.
 //  Copyright © 2017年 myl. All rights reserved.
 //
+#import "YJFPSLabel.h"
 
 #import "StockChatCell.h"
 #import "KLineChartView.h"
@@ -215,6 +216,10 @@
     //隐藏状态栏
     [[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationNone];
     
+    YJFPSLabel *label = [[YJFPSLabel alloc]initWithFrame:CGRectMake(30, 0, 50, 20)];
+    label.layer.zPosition = 1000;
+    [horScreenView addSubview:label];
+    [label start];
 }
 
 

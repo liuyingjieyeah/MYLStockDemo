@@ -22,9 +22,9 @@
 @property (nonatomic,strong)UIColor * volumeFallColor;
 @property (nonatomic,strong)UIColor * volumeTieColor;
 
-@property (nonatomic,assign)BOOL drawFilledEnabled;
-@property (nonatomic,strong)UIColor * fillStartColor;
-@property (nonatomic,strong)UIColor * fillStopColor;
+@property (nonatomic,assign)BOOL drawFilledEnabled;     //是否显示渐变效果
+@property (nonatomic,strong)UIColor * fillStartColor;   //渐变初始颜色
+@property (nonatomic,strong)UIColor * fillStopColor;    //渐变最终颜色
 @property (nonatomic,assign)CGFloat fillAlpha;
 
 
